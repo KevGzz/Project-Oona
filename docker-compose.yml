@@ -1,0 +1,15 @@
+services:
+  db_host:
+    container_name: db
+    image: mysql:8.4
+    environment:
+      - "MYSQL_ROOT_PASSWORD=elTiki123"
+    ports:
+      - "3306:3306"
+    volumes:
+      - "$PWD/db_data:/var/lib/mysql"
+    networks:
+      - net
+networks:
+  net:
+

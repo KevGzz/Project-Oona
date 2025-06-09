@@ -1,0 +1,26 @@
+package controller;
+
+import LogicaNegocio.Entidades.Venta;
+import Repository.VentaRepo;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/ventas")
+public class VentaController {
+    @Autowired
+    private VentaRepo gatoRepo;
+
+    @PostMapping
+    public Venta crear(@RequestBody Venta gatinho) {
+        return gatoRepo.save(gatinho);
+    }
+
+    @GetMapping
+    public List<Venta> listar() {
+        return gatoRepo.findAll();
+    }
+
+}

@@ -26,7 +26,7 @@ public class ProductoDTOMapper {
         for(PrecioDTO p : dto.Precios){
             preciosFromDTO.add(PrecioDTOMapper.FromDTO(p));
         }
-        return new Producto(dto.Id, ProveedorDTOMapper.FromDTO(dto.Proveedor), etiquetasFromDTO, caracteristicasFromDTO, preciosFromDTO,
+        return new Producto(ProveedorDTOMapper.FromDTO(dto.Proveedor), etiquetasFromDTO, caracteristicasFromDTO, preciosFromDTO,
                 dto.Nombre, dto.Descripcion);
     }
     public static ProductoDTO ToDTO(Producto producto){

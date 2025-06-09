@@ -1,8 +1,12 @@
 package LogicaAplicacion.DTOs;
 
+import lombok.Builder;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Builder
+@Data
 public class EtiquetaDTO {
-    public String Nombre;
-    public EtiquetaDTO(String nombre) {
-        Nombre = nombre;
-    }
+    private final String nombre;
 }

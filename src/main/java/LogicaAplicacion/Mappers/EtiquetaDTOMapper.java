@@ -5,7 +5,7 @@ import LogicaNegocio.Entidades.Etiqueta;
 
 public class EtiquetaDTOMapper {
     public static Etiqueta FromDTO(EtiquetaDTO dto){
-        return new Etiqueta(dto.Nombre);
+        return new Etiqueta(dto.getNombre());
     }
     public static EtiquetaDTO ToDTO(Etiqueta etiqueta){
         return new EtiquetaDTO(etiqueta.getNombre());

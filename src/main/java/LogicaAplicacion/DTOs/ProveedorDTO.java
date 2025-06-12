@@ -1,12 +1,14 @@
 package LogicaAplicacion.DTOs;
 
+import lombok.Builder;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Builder
+@Data
 public class ProveedorDTO {
-    public String RazonSocial;
-    public String Telefono;
-    public String Email;
-    public ProveedorDTO(String razonSocial, String telefono, String email) {
-        RazonSocial = razonSocial;
-        Telefono = telefono;
-        Email = email;
-    }
+    private final String RazonSocial;
+    private final String Telefono;
+    private final String Email;
 }

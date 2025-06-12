@@ -1,10 +1,13 @@
 package LogicaAplicacion.DTOs;
 
+import lombok.Builder;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Builder
+@Data
 public class ConfiguracionDTO {
-    public String Nombre;
-    public double Valor;
-    public ConfiguracionDTO(String nombre, double valor) {
-        Nombre = nombre;
-        Valor = valor;
-    }
+    private final String Nombre;
+    private final double Valor;
 }

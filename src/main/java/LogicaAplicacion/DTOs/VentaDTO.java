@@ -2,16 +2,16 @@ package LogicaAplicacion.DTOs;
 
 import java.sql.Date;
 import java.util.List;
+import lombok.Builder;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
+@RequiredArgsConstructor
+@Builder
+@Data
 public class VentaDTO {
-    public int Id;
-    public Date Fecha;
-    public List<ItemDTO> Items;
-    public double PrecioTotal;
-    public VentaDTO(int id, Date Fecha, List<ItemDTO> Items, double PrecioTotal) {
-        Id = id;
-        this.Fecha = Fecha;
-        this.Items = Items;
-        this.PrecioTotal = PrecioTotal;
-    }
+    private final int Id;
+    private final Date Fecha;
+    private final List<ItemDTO> Items;
+    private final double PrecioTotal;
 }

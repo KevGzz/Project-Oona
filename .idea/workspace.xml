@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38949c78-843c-418b-8129-c19b6b1526d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Caracteristica.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Caracteristica.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Configuracion.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Configuracion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Etiqueta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Etiqueta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Precio.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Precio.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Proveedor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Proveedor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Stock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Venta.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Venta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repository/ProjectOonaRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/GatoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/ProductoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/ProductoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/CaracteristicaDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/CaracteristicaDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ConfiguracionDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ConfiguracionDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ItemDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ItemDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/PrecioDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/PrecioDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ProductoDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ProductoDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ProveedorDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ProveedorDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/StockDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/StockDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/UsuarioDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/UsuarioDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/VentaDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/VentaDTOMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +38,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "develop",
     "last_opened_file_path": "/home/kevgzz/Proyecto/Project-Oona",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -53,12 +53,6 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Project-Oona" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Project-Oona" />
       <option name="ENV_FILES" value="" />
@@ -81,6 +75,12 @@
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Project-Oona" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
   </component>
   <component name="SharedIndexes">

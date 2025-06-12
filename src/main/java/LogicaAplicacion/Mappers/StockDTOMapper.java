@@ -5,7 +5,7 @@ import LogicaNegocio.Entidades.Stock;
 
 public class StockDTOMapper {
     public static Stock FromDTO(StockDTO dto) {
-        return new Stock(dto.Id, ProveedorDTOMapper.FromDTO(dto.Proveedor), ProductoDTOMapper.FromDTO(dto.Producto), dto.Cantidad);
+        return new Stock(dto.getId(), ProveedorDTOMapper.FromDTO(dto.getProveedor()), ProductoDTOMapper.FromDTO(dto.getProducto()), dto.getCantidad());
     }
     public static StockDTO toDTO(Stock stock) {
         return new StockDTO(stock.getIdStock(), ProveedorDTOMapper.ToDTO(stock.getProveedor()), ProductoDTOMapper.ToDTO(stock.getProducto()), stock.getCantidad());

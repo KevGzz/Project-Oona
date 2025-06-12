@@ -11,10 +11,10 @@ import java.util.List;
 public class VentaDTOMapper {
     public static Venta FromDTO(VentaDTO dto){
         List<Item> itemsFromDTO = new ArrayList<>();
-        for(ItemDTO i : dto.Items){
+        for(ItemDTO i : dto.getItems()){
             itemsFromDTO.add(ItemDTOMapper.FromDTO(i));
         }
-        return new Venta(dto.Id, dto.Fecha, itemsFromDTO, dto.PrecioTotal);
+        return new Venta(dto.getId(), dto.getFecha(), itemsFromDTO, dto.getPrecioTotal());
     }
     public static VentaDTO toDTO(Venta venta) {
         List<ItemDTO> itemsToDTO = new ArrayList<>();

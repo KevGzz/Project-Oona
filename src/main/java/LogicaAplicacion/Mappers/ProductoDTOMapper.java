@@ -17,17 +17,17 @@ public class ProductoDTOMapper {
         List<Etiqueta> etiquetasFromDTO = new ArrayList<>();
         List<Caracteristica> caracteristicasFromDTO = new ArrayList<>();
         List<Precio> preciosFromDTO = new ArrayList<>();
-        for(EtiquetaDTO e : dto.Etiquetas){
+        for(EtiquetaDTO e : dto.getEtiquetas()){
             etiquetasFromDTO.add(EtiquetaDTOMapper.FromDTO(e));
         }
-        for(CaracteristicaDTO c : dto.Caracteristicas){
+        for(CaracteristicaDTO c : dto.getCaracteristicas()){
             caracteristicasFromDTO.add(CaracteristicaDTOMapper.FromDTO(c));
         }
-        for(PrecioDTO p : dto.Precios){
+        for(PrecioDTO p : dto.getPrecios()){
             preciosFromDTO.add(PrecioDTOMapper.FromDTO(p));
         }
-        return new Producto(ProveedorDTOMapper.FromDTO(dto.Proveedor), etiquetasFromDTO, caracteristicasFromDTO, preciosFromDTO,
-                dto.Nombre, dto.Descripcion);
+        return new Producto(ProveedorDTOMapper.FromDTO(dto.getProveedor()), etiquetasFromDTO, caracteristicasFromDTO, preciosFromDTO,
+                dto.getNombre(), dto.getDescripcion());
     }
     public static ProductoDTO ToDTO(Producto producto){
         List<EtiquetaDTO> etiquetasToDTO = new ArrayList<>();
@@ -42,7 +42,7 @@ public class ProductoDTOMapper {
         for(Precio p : producto.getPrecios()){
             preciosToDTO.add(PrecioDTOMapper.ToDTO(p));
         }
-        return new ProductoDTO(producto.getId(), ProveedorDTOMapper.ToDTO(producto.getProveedor()), etiquetasToDTO, caracteristicasToDTO, preciosToDTO,
+        return new ProductoDTO(ProveedorDTOMapper.ToDTO(producto.getProveedor()), etiquetasToDTO, caracteristicasToDTO, preciosToDTO,
                 producto.getNombre(), producto.getDescripcion());
     }
 }

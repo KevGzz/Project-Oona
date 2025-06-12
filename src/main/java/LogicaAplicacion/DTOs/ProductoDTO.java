@@ -12,7 +12,6 @@ import lombok.RequiredArgsConstructor;
 @Builder
 @Data
 public class ProductoDTO {
-    private final int Id;
     private final ProveedorDTO Proveedor;
     private final List<EtiquetaDTO> Etiquetas;
     private final List<CaracteristicaDTO> Caracteristicas;

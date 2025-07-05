@@ -23,5 +23,12 @@ public class UsuarioController {
         return gatoRepo.findAll();
     //Usuario.builder().nombre("Gatinho").contrasena("12345678").build(); //retorna un tipo usuario
     }
-
+    @PutMapping
+    public Usuario editar(@RequestBody Usuario gatinho) {
+        return gatoRepo.save(gatinho);
+    }
+    @DeleteMapping
+    public void eliminar(@RequestBody Usuario gatinho) {
+        gatoRepo.delete(gatinho);
+    }
 }

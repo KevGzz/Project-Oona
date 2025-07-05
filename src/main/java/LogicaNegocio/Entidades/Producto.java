@@ -1,8 +1,6 @@
 package LogicaNegocio.Entidades;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -17,8 +15,11 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Producto extends EntidadBase{
+    @ManyToOne
     private Proveedor proveedor;
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Etiqueta> etiquetas;
+    @OneToMany(cascade = CascadeType.ALL)
     private List<Caracteristica> caracteristicas;
     @OneToMany(cascade= CascadeType.ALL) //Revisar cascade=
     private List<Precio> precios;

@@ -23,4 +23,14 @@ public class PrecioController {
         return gatoRepo.findAll();
     }
 
+    @PutMapping
+    public Precio editar(@RequestBody Precio gatinho) {
+        return gatoRepo.save(gatinho);
+    }
+
+    @DeleteMapping
+    public void eliminar(@RequestBody Precio gatinho) {
+        gatoRepo.delete(gatinho);
+    }
+
 }

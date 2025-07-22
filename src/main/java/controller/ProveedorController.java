@@ -23,4 +23,14 @@ public class ProveedorController {
         return gatoRepo.findAll();
     }
 
+    @PutMapping
+    public Proveedor editar(@RequestBody Proveedor gatinho) {
+        return gatoRepo.save(gatinho);
+    }
+
+    @DeleteMapping
+    public void eliminar(@RequestBody Proveedor gatinho) {
+        gatoRepo.delete(gatinho);
+    }
+
 }

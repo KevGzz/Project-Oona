@@ -23,4 +23,14 @@ public class StockController {
         return gatoRepo.findAll();
     }
 
+    @PutMapping
+    public Stock editar(@RequestBody Stock gatinho) {
+        return gatoRepo.save(gatinho);
+    }
+
+    @DeleteMapping
+    public void eliminar(@RequestBody Stock gatinho) {
+        gatoRepo.delete(gatinho);
+    }
+
 }

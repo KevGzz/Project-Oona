@@ -23,4 +23,13 @@ public class VentaController {
         return gatoRepo.findAll();
     }
 
+    @PutMapping
+    public Venta editar(@RequestBody Venta gatinho) {
+        return gatoRepo.save(gatinho);
+    }
+
+    @DeleteMapping
+    public void eliminar(@RequestBody Venta gatinho) {
+        gatoRepo.delete(gatinho);
+    }
 }

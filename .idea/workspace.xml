@@ -5,60 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38949c78-843c-418b-8129-c19b6b1526d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_redo/#ib_redo10_tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_redo/#ib_redo9" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_temp/temp_1.ibt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_temp/temp_10.ibt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_temp/temp_2.ibt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_temp/temp_3.ibt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_temp/temp_4.ibt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_temp/temp_5.ibt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_temp/temp_6.ibt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_temp/temp_7.ibt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_temp/temp_8.ibt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/#innodb_temp/temp_9.ibt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/auto.cnf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/binlog.000004" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/binlog.000004" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/binlog.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/db_projectOona/usuario.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/db_projectOona/usuario.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/ib_buffer_pool" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/ibtmp1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/mysql.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/undo_001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db_data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/undo_002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Venta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Venta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Oona/Project_Oona/ProjectOonaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Oona/Project_Oona/ProjectOonaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CaracteristicaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CaracteristicaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ConfiguracionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ConfiguracionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EtiquetaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EtiquetaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrecioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrecioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProveedorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProveedorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/StockController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/CaracteristicaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/CaracteristicaDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ConfiguracionDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ConfiguracionDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ItemDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ItemDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/PrecioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/PrecioDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ProductoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ProductoDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ProveedorDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ProveedorDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/StockDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/StockDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/UsuarioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/UsuarioDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/VentaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/VentaDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/CaracteristicaDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/CaracteristicaDTOMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/ConfiguracionDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/ConfiguracionDTOMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/ItemDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/ItemDTOMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/PrecioDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/PrecioDTOMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/ProductoDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/ProductoDTOMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Item$ItemBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Item$ItemBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Item$ItemBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Item$ItemBuilderImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto$ProductoBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto$ProductoBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto$ProductoBuilderImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto$ProductoBuilderImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/VentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/VentaController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,37 +34,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.ProjectOonaApplication.executor": "Debug",
-    "git-widget-placeholder": "feature-crudUsuario",
-    "last_opened_file_path": "/home/kevgzz/Proyecto/Project-Oona",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.ProjectOonaApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/kevgzz/Proyecto/Project-Oona&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Project-Oona" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Project-Oona" />
       <option name="ENV_FILES" value="" />
@@ -130,18 +94,12 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Project-Oona" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
-        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
       </set>
     </attachedChunks>
   </component>
@@ -162,6 +120,8 @@
       <workItem from="1750548919158" duration="2727000" />
       <workItem from="1750888221919" duration="1927000" />
       <workItem from="1751756756113" duration="347000" />
+      <workItem from="1751758523964" duration="1542000" />
+      <workItem from="1752707335815" duration="4000" />
     </task>
     <servers />
   </component>

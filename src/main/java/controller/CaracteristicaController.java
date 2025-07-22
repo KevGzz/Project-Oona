@@ -23,4 +23,14 @@ public class CaracteristicaController {
         return gatoRepo.findAll();
     }
 
+    @PutMapping
+    public Caracteristica editar(@RequestBody Caracteristica gatinho) {
+        return gatoRepo.save(gatinho);
+    }
+
+    @DeleteMapping
+    public void eliminar(@RequestBody Caracteristica gatinho) {
+        gatoRepo.delete(gatinho);
+    }
+
 }

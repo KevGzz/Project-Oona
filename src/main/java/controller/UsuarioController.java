@@ -27,6 +27,7 @@ public class UsuarioController {
     public Usuario editar(@RequestBody Usuario gatinho) {
         return gatoRepo.save(gatinho);
     }
+    
     @DeleteMapping
     public void eliminar(@RequestBody Usuario gatinho) {
         gatoRepo.delete(gatinho);

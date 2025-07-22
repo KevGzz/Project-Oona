@@ -23,4 +23,14 @@ public class EtiquetaController {
         return gatoRepo.findAll();
     }
 
+    @PutMapping
+    public Etiqueta editar(@RequestBody Etiqueta gatinho) {
+        return gatoRepo.save(gatinho);
+    }
+
+    @DeleteMapping
+    public void eliminar(@RequestBody Etiqueta gatinho) {
+        gatoRepo.delete(gatinho);
+    }
+
 }

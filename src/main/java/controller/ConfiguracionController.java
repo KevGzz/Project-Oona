@@ -24,4 +24,14 @@ public class ConfiguracionController {
         return gatoRepo.findAll();
     }
 
+    @PutMapping
+    public Configuracion editar(@RequestBody Configuracion gatinho) {
+        return gatoRepo.save(gatinho);
+    }
+
+    @DeleteMapping
+    public void eliminar(@RequestBody Configuracion gatinho) {
+        gatoRepo.delete(gatinho);
+    }
+
 }

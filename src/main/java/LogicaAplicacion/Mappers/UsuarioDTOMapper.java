@@ -8,6 +8,6 @@ public class UsuarioDTOMapper {
         return new Usuario(dto.getNombre(), dto.getContrasena());
     }
     public static UsuarioDTO FromUsuario(Usuario usuario){
-        return new UsuarioDTO(usuario.getNombre(), usuario.getContrasena());
+        return UsuarioDTO.builder().Nombre(usuario.getNombre()).build();
     }
 }

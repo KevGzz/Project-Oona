@@ -13,7 +13,6 @@ import lombok.RequiredArgsConstructor;
 @Data
 public class ProductoDTO {
     private final ProveedorDTO Proveedor;
-    private final List<EtiquetaDTO> Etiquetas;
     private final List<CaracteristicaDTO> Caracteristicas;
     private final List<PrecioDTO> Precios;
     private final String Nombre;

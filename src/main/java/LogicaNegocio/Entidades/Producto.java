@@ -18,8 +18,6 @@ public class Producto extends EntidadBase{
     @ManyToOne
     private Proveedor proveedor;
     @OneToMany(cascade = CascadeType.ALL)
-    private List<Etiqueta> etiquetas;
-    @OneToMany(cascade = CascadeType.ALL)
     private List<Caracteristica> caracteristicas;
     @OneToMany(cascade= CascadeType.ALL) //Revisar cascade=
     private List<Precio> precios;

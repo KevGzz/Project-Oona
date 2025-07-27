@@ -5,37 +5,135 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38949c78-843c-418b-8129-c19b6b1526d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Usuarios/GetUsuarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/InterfacesCU/Usuarios/IGetUsuarios.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/ApiEnvConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/MercadoLibreController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/controllers/UsuarioController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e4e9cdc4-79d4-4f3b-8bc3-b00a82ee51a4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e4e9cdc4-79d4-4f3b-8bc3-b00a82ee51a4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CaracteristicaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CaracteristicaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ConfiguracionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ConfiguracionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EtiquetaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/EtiquetaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ItemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrecioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PrecioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProductoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProveedorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/ProveedorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/StockController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/VentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/VentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/#ib_16384_1.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/#ib_16384_1.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/#innodb_redo/#ib_redo11_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/#innodb_redo/#ib_redo12_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/#innodb_redo/#ib_redo13_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/#innodb_redo/#ib_redo14_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/#innodb_redo/#ib_redo15_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/#innodb_redo/#ib_redo16_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/#innodb_redo/#ib_redo17_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/auto.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/auto.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/binlog.000001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/binlog.000002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/binlog.000003" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/binlog.index" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/binlog.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/db_projectOona/usuario.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/db_projectOona/usuario.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/ib_buffer_pool" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/ibdata1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/mysql.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/mysql/general_log_214.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/mysql/slow_log_215.sdi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/mysql_upgrade_history" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/mysql_upgrade_history" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/sys/sys_config.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/sys/sys_config.ibd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/undo_001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/db_data/undo_002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/EtiquetaDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/ProductoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/ProductoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/UsuarioDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/UsuarioDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/EtiquetaDTOMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ProductoDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ProductoDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/UsuarioDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/UsuarioDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Etiqueta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Oona/Project_Oona/ProjectOonaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Oona/Project_Oona/ProjectOonaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/CaracteristicaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/ICaracteristicaRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/ConfiguracionRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IConfiguracionRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/EtiquetaRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/ItemRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IRepoItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/PrecioRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IPrecioRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/ProductoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/iProductoRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/ProveedorRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IProveedorRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/StockRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IStockRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/UsuarioRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IUsuarioRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/VentaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IVentaRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CaracteristicaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/CaracteristicaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ConfiguracionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ConfiguracionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/EtiquetaController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/PrecioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/PrecioController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProductoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ProductoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/ProveedorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/ProveedorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/UsuarioController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/VentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/VentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/UsuarioDTO$UsuarioDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/UsuarioDTO$UsuarioDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/UsuarioDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/UsuarioDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/UsuarioDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/UsuarioDTOMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Oona/Project_Oona/ProjectOonaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Oona/Project_Oona/ProjectOonaApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/CaracteristicaRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/ConfiguracionRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/EtiquetaRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/ItemRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/PrecioRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/ProductoRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/ProveedorRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/StockRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/UsuarioRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/VentaRepo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/CaracteristicaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/ConfiguracionController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/EtiquetaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/ItemController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/PrecioController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/ProductoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/ProveedorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/StockController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/UsuarioController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/VentaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2y0OcIgF8Qho48YGk1V5Pz5hqbz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;HTTP Request.generated-requests | #1.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Project_Oona [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Project_Oona [compile].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
@@ -55,7 +153,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -64,13 +162,7 @@
     ]
   }
 }</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="Project-Oona" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.ProjectOonaApplication">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Project-Oona" />
       <option name="ENV_FILES" value="" />
@@ -94,12 +186,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Project-Oona" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests | #1" />
+      <item itemvalue="Spring Boot.ProjectOonaApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.26094.121" />
-        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-IU-251.26094.121" />
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
       </set>
     </attachedChunks>
   </component>
@@ -122,10 +232,39 @@
       <workItem from="1751756756113" duration="347000" />
       <workItem from="1751758523964" duration="1542000" />
       <workItem from="1752707335815" duration="4000" />
+      <workItem from="1753219082467" duration="287000" />
+      <workItem from="1753219384711" duration="4844000" />
+      <workItem from="1753310914548" duration="4569000" />
+      <workItem from="1753315800393" duration="150000" />
+      <workItem from="1753396037968" duration="10162000" />
+      <workItem from="1753487063616" duration="478000" />
+      <workItem from="1753488308756" duration="531000" />
+      <workItem from="1753565290873" duration="5584000" />
+      <workItem from="1753653167442" duration="823000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="restClient" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

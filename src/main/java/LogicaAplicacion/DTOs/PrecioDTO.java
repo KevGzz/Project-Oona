@@ -1,7 +1,5 @@
 package LogicaAplicacion.DTOs;
 
-import LogicaNegocio.Entidades.Moneda;
-
 import java.util.Date;
 import lombok.Builder;
 import lombok.Data;
@@ -11,8 +9,7 @@ import lombok.RequiredArgsConstructor;
 @Builder
 @Data
 public class PrecioDTO {
-    private final Date FechaDesde;
-    private final Date FechaHasta;
+    private final Date Fecha;
     private final double Valor;
-    private final Moneda Moneda;
+    private final String Moneda;
 }

@@ -17,6 +17,7 @@ import java.util.List;
 public class Producto extends EntidadBase{
     @ManyToOne
     private Proveedor proveedor;
+    private String urlFoto;
     @OneToMany(cascade = CascadeType.ALL)
     private List<Caracteristica> caracteristicas;
     @OneToMany(cascade= CascadeType.ALL) //Revisar cascade=

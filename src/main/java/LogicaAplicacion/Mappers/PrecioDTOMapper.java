@@ -5,9 +5,9 @@ import LogicaNegocio.Entidades.Precio;
 
 public class PrecioDTOMapper {
     public static Precio FromDTO(PrecioDTO dto) {
-        return new Precio(dto.getFechaDesde(),dto.getFechaHasta(),dto.getValor(),dto.getMoneda());
+        return new Precio(dto.getFecha(),dto.getValor(),dto.getMoneda());
     }
     public static PrecioDTO ToDTO(Precio precio) {
-        return new PrecioDTO(precio.getFechaDesde(),precio.getFechaHasta(),precio.getValor(),precio.getMoneda());
+        return new PrecioDTO(precio.getFecha(),precio.getValor(),precio.getMoneda());
     }
 }

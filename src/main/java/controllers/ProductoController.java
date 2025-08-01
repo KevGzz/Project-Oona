@@ -18,7 +18,7 @@ public class ProductoController {
     private final ClienteMercadoLibre clienteMercadoLibre;
 
     @GetMapping
-    public ResponseEntity<String> listar() {
+    public ResponseEntity<List<String>> listar() {
         return new ResponseEntity<>(clienteMercadoLibre.listarProductos(), HttpStatus.OK);
     }
 

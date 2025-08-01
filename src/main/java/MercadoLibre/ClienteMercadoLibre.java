@@ -1,15 +1,21 @@
 package MercadoLibre;
 
+import LogicaAplicacion.DTOs.CaracteristicaDTO;
+import LogicaAplicacion.DTOs.PrecioDTO;
+import LogicaAplicacion.DTOs.ProductoDTO;
 import LogicaNegocio.Entidades.Producto;
 import config.ApiEnvConfig;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -38,11 +44,13 @@ public class ClienteMercadoLibre {
                 .body(ApiEnvConfig.class);
 
         apiEnvConfig.setAccess_token(config.getAccess_token());
+        System.out.println(apiEnvConfig.getAccess_token());
         apiEnvConfig.setToken_type(config.getToken_type());
         apiEnvConfig.setExpires_in(config.getExpires_in());
         apiEnvConfig.setScope(config.getScope());
         apiEnvConfig.setUser_id(config.getUser_id());
         apiEnvConfig.setRefresh_token(config.getRefresh_token());
+        System.out.println(apiEnvConfig.getRefresh_token());
     }
 
     public String getInfoUser(){
@@ -55,14 +63,64 @@ public class ClienteMercadoLibre {
                 .body(String.class);
     }
 
-    public String listarProductos() {
+    public List<String> listarProductos() {
         RestClient restClient = RestClient.create();
 
-        return restClient.get()
-                .uri("https://api.mercadolibre.com/users/"+apiEnvConfig.getUser_id()+"/items/search")
+        Map<String, Object> response = restClient.get()
+                .uri("https://api.mercadolibre.com/users/" + apiEnvConfig.getUser_id() + "/items/search")
                 .header("Authorization", "Bearer " + apiEnvConfig.getAccess_token().toString())
                 .retrieve()
-                .body(String.class);
+                .body(new ParameterizedTypeReference<>() {
+                });
 
+        List<String> results = (List<String>) response.get("results");
+        List<String> retorno = List.of();
+
+        for (String resultado : results) {
+
+            Map<String, Object> item = restClient.get()
+                    .uri("https://api.mercadolibre.com/items/" + resultado.toString())
+                    .header("Authorization", "Bearer " + apiEnvConfig.getAccess_token().toString())
+                    .retrieve()
+                    .body(new ParameterizedTypeReference<>() {
+                    });
+
+            List<CaracteristicaDTO> caracteristicas = List.of();
+            List<Map<String, Object>> attributes = (List<Map<String, Object>>) response.get("attributes");
+            for (Map<String, Object> c : attributes) {
+                caracteristicas.add(new CaracteristicaDTO((String) c.get("name"), (String) c.get("value_name")));
+            }
+            Map<String, Object> pricesClient = restClient.get()
+                    .uri("https://api.mercadolibre.com/items/" + resultado.toString() + "/prices")
+                    .header("Authorization", "Bearer " + apiEnvConfig.getAccess_token().toString())
+                    .retrieve()
+                    .body(new ParameterizedTypeReference<>() {
+                    });
+
+            List<PrecioDTO> precios = List.of();
+            List<Map<String, Object>> prices = (List<Map<String, Object>>) pricesClient.get("prices");
+            for (Map<String, Object> p : prices) {
+                precios.add(new PrecioDTO((Date) p.get("last_updated"), (Double) p.get("amount"), (String) p.get("currency_id")));
+            }
+
+            Map<String, Object> descriptionClient = restClient.get()
+                    .uri("https://api.mercadolibre.com/items/" + resultado.toString() + "/desciption")
+                    .header("Authorization", "Bearer " + apiEnvConfig.getAccess_token().toString())
+                    .retrieve()
+                    .body(new ParameterizedTypeReference<>() {
+                    });
+            String description = (String) descriptionClient.get("plain_text");
+
+            ProductoDTO producto = new ProductoDTO(null,
+                    (String) item.get("thumbnail"),
+                    caracteristicas,
+                    precios,
+                    (String) item.get("title"),
+                    description
+            );
+            retorno.add(producto.toString());
+        }
+        return retorno;
     }
+
 }

@@ -15,8 +15,7 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Precio extends EntidadBase{
-    private Date fechaDesde;
-    private Date fechaHasta;
+    private Date fecha;
     private double valor;
-    private Moneda moneda;
+    private String moneda;
 }

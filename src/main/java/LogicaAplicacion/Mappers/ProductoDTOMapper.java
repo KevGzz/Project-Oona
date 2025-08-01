@@ -20,7 +20,7 @@ public class ProductoDTOMapper {
         for(PrecioDTO p : dto.getPrecios()){
             preciosFromDTO.add(PrecioDTOMapper.FromDTO(p));
         }
-        return new Producto(ProveedorDTOMapper.FromDTO(dto.getProveedor()), etiquetasFromDTO, caracteristicasFromDTO, preciosFromDTO,
+        return new Producto(ProveedorDTOMapper.FromDTO(dto.getProveedor()), dto.getUrlFoto(), caracteristicasFromDTO, preciosFromDTO,
                 dto.getNombre(), dto.getDescripcion());
     }
     public static ProductoDTO ToDTO(Producto producto){
@@ -32,7 +32,7 @@ public class ProductoDTOMapper {
         for(Precio p : producto.getPrecios()){
             preciosToDTO.add(PrecioDTOMapper.ToDTO(p));
         }
-        return new ProductoDTO(ProveedorDTOMapper.ToDTO(producto.getProveedor()), etiquetasToDTO, caracteristicasToDTO, preciosToDTO,
+        return new ProductoDTO(ProveedorDTOMapper.ToDTO(producto.getProveedor()), producto.getUrlFoto(), caracteristicasToDTO, preciosToDTO,
                 producto.getNombre(), producto.getDescripcion());
     }
 }

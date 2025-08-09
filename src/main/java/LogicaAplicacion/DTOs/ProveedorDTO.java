@@ -8,6 +8,7 @@ import lombok.RequiredArgsConstructor;
 @Builder
 @Data
 public class ProveedorDTO {
+    private final String id;
     private final String RazonSocial;
     private final String Telefono;
     private final String Email;

@@ -2,7 +2,7 @@ FROM openjdk:23-jdk-slim
 
 WORKDIR /app
 COPY build/libs/Project-Oona.jar Project-Oona.jar
-EXPOSE 8080
+EXPOSE 8085
 
 ENTRYPOINT ["java", "-jar", "webapp.jar"]
 

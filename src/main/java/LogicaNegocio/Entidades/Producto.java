@@ -15,7 +15,9 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Producto extends EntidadBase{
-    @ManyToOne
+    private String idMeli;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "id_proveedor", nullable = true)
     private Proveedor proveedor;
     private String urlFoto;
     @OneToMany(cascade = CascadeType.ALL)
@@ -24,4 +26,5 @@ public class Producto extends EntidadBase{
     private List<Precio> precios;
     private String nombre;
     private String descripcion;
+
 }

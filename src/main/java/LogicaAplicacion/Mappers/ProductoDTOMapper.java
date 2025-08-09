@@ -3,9 +3,11 @@ package LogicaAplicacion.Mappers;
 import LogicaAplicacion.DTOs.CaracteristicaDTO;
 import LogicaAplicacion.DTOs.PrecioDTO;
 import LogicaAplicacion.DTOs.ProductoDTO;
+import LogicaAplicacion.DTOs.ProveedorDTO;
 import LogicaNegocio.Entidades.Caracteristica;
 import LogicaNegocio.Entidades.Precio;
 import LogicaNegocio.Entidades.Producto;
+import LogicaNegocio.Entidades.Proveedor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,8 +22,16 @@ public class ProductoDTOMapper {
         for(PrecioDTO p : dto.getPrecios()){
             preciosFromDTO.add(PrecioDTOMapper.FromDTO(p));
         }
-        return new Producto(ProveedorDTOMapper.FromDTO(dto.getProveedor()), dto.getUrlFoto(), caracteristicasFromDTO, preciosFromDTO,
-                dto.getNombre(), dto.getDescripcion());
+        Proveedor proveedor = null;
+        if(dto.getProveedor() != null){
+            proveedor = ProveedorDTOMapper.FromDTO(dto.getProveedor());
+        }
+//        return new Producto(dto.getIdMeli(), proveedor, dto.getUrlFoto(), caracteristicasFromDTO, preciosFromDTO,
+//                dto.getNombre(), dto.getDescripcion());
+        return Producto.builder().id(dto.getId()).idMeli(dto.getIdMeli()).proveedor(proveedor)
+                .urlFoto(dto.getUrlFoto()).caracteristicas(caracteristicasFromDTO)
+                .precios(preciosFromDTO).nombre(dto.getNombre()).descripcion(dto.getDescripcion())
+                .build();
     }
     public static ProductoDTO ToDTO(Producto producto){
         List<CaracteristicaDTO> caracteristicasToDTO = new ArrayList<>();
@@ -32,7 +42,12 @@ public class ProductoDTOMapper {
         for(Precio p : producto.getPrecios()){
             preciosToDTO.add(PrecioDTOMapper.ToDTO(p));
         }
-        return new ProductoDTO(ProveedorDTOMapper.ToDTO(producto.getProveedor()), producto.getUrlFoto(), caracteristicasToDTO, preciosToDTO,
+        ProveedorDTO proveedor = null;
+        if(producto.getProveedor() != null){
+            proveedor = ProveedorDTOMapper.ToDTO(producto.getProveedor());
+        }
+        return new ProductoDTO(producto.getIdMeli(), proveedor,
+                producto.getUrlFoto(), caracteristicasToDTO, preciosToDTO,
                 producto.getNombre(), producto.getDescripcion());
     }
 }

@@ -1,8 +1,7 @@
 package controllers;
 
-import LogicaNegocio.Entidades.Producto;
+import LogicaAplicacion.DTOs.ProductoDTO;
 import MercadoLibre.ClienteMercadoLibre;
-import Repository.iProductoRepo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -18,7 +17,7 @@ public class ProductoController {
     private final ClienteMercadoLibre clienteMercadoLibre;
 
     @GetMapping
-    public ResponseEntity<List<String>> listar() {
+    public ResponseEntity<List<ProductoDTO>> listar() {
         return new ResponseEntity<>(clienteMercadoLibre.listarProductos(), HttpStatus.OK);
     }
 

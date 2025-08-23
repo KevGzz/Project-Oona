@@ -1,35 +1,28 @@
 package controllers;
 
+import LogicaAplicacion.DTOs.VentaDTO;
 import LogicaNegocio.Entidades.Venta;
+import MercadoLibre.ClienteMercadoLibre;
 import Repository.IVentaRepo;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@RequiredArgsConstructor
 @RequestMapping("/ventas")
 public class VentaController {
-    @Autowired
-    private IVentaRepo gatoRepo;
 
-    @PostMapping
-    public Venta crear(@RequestBody Venta gatinho) {
-        return gatoRepo.save(gatinho);
-    }
+    @Autowired
+    private final ClienteMercadoLibre clienteMercadoLibre;
 
     @GetMapping
-    public List<Venta> listar() {
-        return gatoRepo.findAll();
+    public ResponseEntity<List<VentaDTO>>listar(@RequestHeader("X-userToken") String token) {
+        return new ResponseEntity<>(clienteMercadoLibre.listarVentas(), HttpStatus.OK);
     }
 
-    @PutMapping
-    public Venta editar(@RequestBody Venta gatinho) {
-        return gatoRepo.save(gatinho);
-    }
-
-    @DeleteMapping
-    public void eliminar(@RequestBody Venta gatinho) {
-        gatoRepo.delete(gatinho);
-    }
 }

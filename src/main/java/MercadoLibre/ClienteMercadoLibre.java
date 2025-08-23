@@ -1,9 +1,8 @@
 package MercadoLibre;
 
-import LogicaAplicacion.DTOs.CaracteristicaDTO;
-import LogicaAplicacion.DTOs.PrecioDTO;
-import LogicaAplicacion.DTOs.ProductoDTO;
-import LogicaAplicacion.DTOs.ProveedorDTO;
+import LogicaAplicacion.CasosDeUso.Ventas.GetVentas;
+import LogicaAplicacion.CasosDeUso.Ventas.PostVentas;
+import LogicaAplicacion.DTOs.*;
 import LogicaAplicacion.InterfacesCU.Productos.IGetProductos;
 import LogicaAplicacion.InterfacesCU.Productos.IPostProductos;
 import LogicaAplicacion.InterfacesCU.Proveedores.IGetProveedores;
@@ -18,9 +17,9 @@ import org.springframework.web.client.RestClient;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
+import java.sql.Date;
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Map;
 
@@ -36,6 +35,10 @@ public class ClienteMercadoLibre {
     private final IGetProductos getProductos;
     @Autowired
     private final IGetProveedores getProveedores;
+    @Autowired
+    private GetVentas getVentas;
+    @Autowired
+    private PostVentas postVentas;
 
     public void getAccessToken(String codigo){
         RestClient restClient = RestClient.create();
@@ -88,49 +91,7 @@ public class ClienteMercadoLibre {
         List<ProductoDTO> productos = new ArrayList<>();
 
         for (String resultado : results) {
-
-            Map<String, Object> item = restClient.get()
-                    .uri("https://api.mercadolibre.com/items/" + resultado.toString())
-                    .header("Authorization", "Bearer " + apiEnvConfig.getAccess_token().toString())
-                    .retrieve()
-                    .body(new ParameterizedTypeReference<>() {
-                    });
-
-            List<CaracteristicaDTO> caracteristicas = new ArrayList<>();
-            List<Map<String, Object>> attributes = (List<Map<String, Object>>) item.get("attributes");
-            for (Map<String, Object> c : attributes) {
-                caracteristicas.add(new CaracteristicaDTO((String) c.get("name"), (String) c.get("value_name")));
-            }
-            Map<String, Object> pricesClient = restClient.get()
-                    .uri("https://api.mercadolibre.com/items/" + resultado.toString() + "/prices")
-                    .header("Authorization", "Bearer " + apiEnvConfig.getAccess_token().toString())
-                    .retrieve()
-                    .body(new ParameterizedTypeReference<>() {
-                    });
-
-            List<PrecioDTO> precios = new ArrayList<>();
-            List<Map<String, Object>> prices = (List<Map<String, Object>>) pricesClient.get("prices");
-            for (Map<String, Object> p : prices) {
-                precios.add(new PrecioDTO(Date.from(Instant.parse((String)p.get("last_updated"))), Integer.valueOf((Integer) p.get("amount")), (String) p.get("currency_id")));
-            }
-
-            Map<String, Object> descriptionClient = restClient.get()
-                    .uri("https://api.mercadolibre.com/items/"+resultado.toString()+"/description")
-                    .header("Authorization", "Bearer " + apiEnvConfig.getAccess_token().toString())
-                    .retrieve()
-                    .body(new ParameterizedTypeReference<>() {
-                    });
-            String description = (String) descriptionClient.get("plain_text");
-
-            ProductoDTO producto = new ProductoDTO(
-                    resultado.toString(),
-                    null,
-                    (String) item.get("thumbnail"),
-                    caracteristicas,
-                    precios,
-                    (String) item.get("title"),
-                    description
-            );
+            ProductoDTO producto = getInfoProducto(resultado.toString());
             productos.add(producto);
         }
         agregarProductos(productos);
@@ -146,4 +107,87 @@ public class ClienteMercadoLibre {
         }
     }
 
+    public List<VentaDTO> listarVentas() {
+        RestClient restClient = RestClient.create();
+
+        Map<String, Object> response = restClient.get()
+                .uri("https://api.mercadolibre.com/orders/search?seller="+apiEnvConfig.getUser_id()+"&sort=date_desc")
+                .header("Authorization", "Bearer " + apiEnvConfig.getAccess_token().toString())
+                .retrieve()
+                .body(new ParameterizedTypeReference<>() {
+                });
+        List<Map<String, Object>> results = (List<Map<String, Object>>) response.get("results");
+        List<VentaDTO> ventas = new ArrayList<>();
+
+        for (Map<String, Object> r : results) {
+            List<Map<String, Object>> items = (List<Map<String, Object>>) r.get("order_items");
+            List<ItemDTO> itemsDTO = new ArrayList<>();
+            for (Map<String, Object> i : items) {
+                Map<String, Object> item = (Map<String, Object>) i.get("item");
+                ProductoDTO producto = getInfoProducto(item.get("id").toString());
+                ItemDTO dto = new ItemDTO(producto, Integer.parseInt(i.get("quantity").toString()));
+                itemsDTO.add(dto);
+            }
+            VentaDTO venta = new VentaDTO(Date.from(Instant.parse((String)r.get("date_closed"))), itemsDTO, Integer.valueOf(Integer.parseInt(r.get("total_amount").toString())));
+            ventas.add(venta);
+        }
+        agregarVentas(ventas);
+        return getVentas.getVentas();
+    }
+
+    private ProductoDTO getInfoProducto(String idMeli){
+        RestClient restClient = RestClient.create();
+        Map<String, Object> item = restClient.get()
+                .uri("https://api.mercadolibre.com/items/" + idMeli)
+                .header("Authorization", "Bearer " + apiEnvConfig.getAccess_token().toString())
+                .retrieve()
+                .body(new ParameterizedTypeReference<>() {
+                });
+
+        List<CaracteristicaDTO> caracteristicas = new ArrayList<>();
+        List<Map<String, Object>> attributes = (List<Map<String, Object>>) item.get("attributes");
+        for (Map<String, Object> c : attributes) {
+            caracteristicas.add(new CaracteristicaDTO((String) c.get("name"), (String) c.get("value_name")));
+        }
+        Map<String, Object> pricesClient = restClient.get()
+                .uri("https://api.mercadolibre.com/items/" + idMeli + "/prices")
+                .header("Authorization", "Bearer " + apiEnvConfig.getAccess_token().toString())
+                .retrieve()
+                .body(new ParameterizedTypeReference<>() {
+                });
+
+        List<PrecioDTO> precios = new ArrayList<>();
+        List<Map<String, Object>> prices = (List<Map<String, Object>>) pricesClient.get("prices");
+        for (Map<String, Object> p : prices) {
+            precios.add(new PrecioDTO(Date.from(Instant.parse((String)p.get("last_updated"))), Integer.valueOf((Integer) p.get("amount")), (String) p.get("currency_id")));
+        }
+
+        Map<String, Object> descriptionClient = restClient.get()
+                .uri("https://api.mercadolibre.com/items/"+ idMeli +"/description")
+                .header("Authorization", "Bearer " + apiEnvConfig.getAccess_token().toString())
+                .retrieve()
+                .body(new ParameterizedTypeReference<>() {
+                });
+        String description = (String) descriptionClient.get("plain_text");
+
+        ProductoDTO producto = new ProductoDTO(
+                idMeli,
+                null,
+                (String) item.get("thumbnail"),
+                caracteristicas,
+                precios,
+                (String) item.get("title"),
+                description
+        );
+        return producto;
+    }
+
+    private void agregarVentas(List<VentaDTO> retorno) {
+        for (VentaDTO v : retorno) {
+            if(getVentas.existeVenta(v.getFecha())){
+                postVentas.updateVenta(v);
+            }
+            else postVentas.addVenta(v);
+        }
+    }
 }

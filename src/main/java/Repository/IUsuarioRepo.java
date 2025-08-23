@@ -10,4 +10,7 @@ public interface IUsuarioRepo extends JpaRepository<Usuario, String> {
     List<Usuario> findAll();
 
     List<Usuario> findByNombreStartsWithIgnoreCase(String nombre);
+
+    boolean existsByNombreAndContrasena(String nombre, String contrasena);
+
 }

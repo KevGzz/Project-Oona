@@ -10,6 +10,7 @@ public class ProveedorDTOMapper {
         return new Proveedor(dto.getRazonSocial(), dto.getTelefono(), dto.getEmail());
     }
     public static ProveedorDTO ToDTO(Proveedor proveedor){
-        return new ProveedorDTO(proveedor.getId(), proveedor.getRazonSocial(), proveedor.getRazonSocial(), proveedor.getTelefono());
+        return ProveedorDTO.builder().id(proveedor.getId()).RazonSocial(proveedor.getRazonSocial())
+                .Telefono(proveedor.getTelefono()).Email(proveedor.getEmail()).build();
     }
 }

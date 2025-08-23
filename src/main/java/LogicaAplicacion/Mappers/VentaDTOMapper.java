@@ -14,13 +14,14 @@ public class VentaDTOMapper {
         for(ItemDTO i : dto.getItems()){
             itemsFromDTO.add(ItemDTOMapper.FromDTO(i));
         }
-        return new Venta(dto.getId(), dto.getFecha(), itemsFromDTO, dto.getPrecioTotal());
+        java.sql.Date sqlDate = new java.sql.Date(dto.getFecha().getTime());
+        return Venta.builder().id(dto.getId()).fechaVenta(sqlDate).items(itemsFromDTO).build();
     }
     public static VentaDTO toDTO(Venta venta) {
         List<ItemDTO> itemsToDTO = new ArrayList<>();
         for(Item i : venta.getItems()){
             itemsToDTO.add(ItemDTOMapper.ToDTO(i));
         }
-        return new VentaDTO(venta.getIdVenta(), venta.getFechaVenta(), itemsToDTO, venta.getPrecioTotal());
+        return new VentaDTO(venta.getFechaVenta(), itemsToDTO, venta.getPrecioTotal());
     }
 }

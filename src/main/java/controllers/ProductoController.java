@@ -17,7 +17,7 @@ public class ProductoController {
     private final ClienteMercadoLibre clienteMercadoLibre;
 
     @GetMapping
-    public ResponseEntity<List<ProductoDTO>> listar() {
+    public ResponseEntity<List<ProductoDTO>> listar(@RequestHeader("X-userToken") String token) {
         return new ResponseEntity<>(clienteMercadoLibre.listarProductos(), HttpStatus.OK);
     }
 

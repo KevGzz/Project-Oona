@@ -1,11 +1,14 @@
 package LogicaAplicacion.DTOs;
 
-public class CaracteristicaDTO {
-    public String Nombre;
-    public String Descripcion;
+import lombok.Builder;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
 
-    public CaracteristicaDTO(String nombre, String descripcion) {
-        Nombre = nombre;
-        Descripcion = descripcion;
-    }
+@RequiredArgsConstructor
+@Builder
+@Data
+public class CaracteristicaDTO {
+    private final String Nombre;
+    private final String Descripcion;
+
 }

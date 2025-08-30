@@ -5,7 +5,7 @@ import LogicaNegocio.Entidades.Configuracion;
 
 public class ConfiguracionDTOMapper {
     public static Configuracion FromDTO(ConfiguracionDTO dto) {
-        return new Configuracion(dto.Nombre, dto.Valor);
+        return new Configuracion(dto.getNombre(), dto.getValor());
     }
     public static ConfiguracionDTO ToDTO(Configuracion configuracion) {
         return new ConfiguracionDTO(configuracion.getNombre(), configuracion.getValor());

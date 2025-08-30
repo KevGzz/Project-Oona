@@ -1,10 +1,13 @@
 package LogicaAplicacion.DTOs;
 
+import lombok.Builder;
+import lombok.Data;
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Builder
+@Data
 public class ItemDTO {
-    public ProductoDTO Producto;
-    public int Cantidad;
-    public ItemDTO(ProductoDTO Producto, int Cantidad) {
-        this.Producto = Producto;
-        this.Cantidad = Cantidad;
-    }
+    private final ProductoDTO Producto;
+    private final int Cantidad;
 }

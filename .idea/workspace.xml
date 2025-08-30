@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Project_Oona:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="38949c78-843c-418b-8129-c19b6b1526d3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Stock/GetStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Stock/PostStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/InterfacesCU/Stock/IGetStock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/InterfacesCU/Stock/IPostStock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6cffe25a-cdb1-497f-8e84-cfaffdeff229.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6cffe25a-cdb1-497f-8e84-cfaffdeff229.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/StockDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/StockDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/StockDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/StockDTOMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/IStockRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IStockRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/MercadoLibreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/MercadoLibreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/StockDTO$StockDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/StockDTO$StockDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/StockDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/StockDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/StockDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/StockDTOMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Stock$StockBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Stock$StockBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Stock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/IStockRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Repository/IStockRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/config/CorsConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/CorsConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/MercadoLibreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/MercadoLibreController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/StockController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/StockController.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2y0OcIgF8Qho48YGk1V5Pz5hqbz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.generated-requests | #1.executor": "Run",
+    "Maven.Project_Oona [clean].executor": "Run",
+    "Maven.Project_Oona [compile].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SHELLCHECK.PATH": "I do mind",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "Spring Boot.ProjectOonaApplication.executor": "Run",
+    "git-widget-placeholder": "feature-login",
+    "last_opened_file_path": "/home/kevgzz/Proyecto/Project-Oona",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.splitter.proportion": "0.22138126",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RunManager" selected="Spring Boot.ProjectOonaApplication">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="Project-Oona" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" executionIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Project-Oona" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="mvnw" type="ShConfigurationType" temporary="true">
+      <option name="SCRIPT_TEXT" value="" />
+      <option name="INDEPENDENT_SCRIPT_PATH" value="true" />
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/mvnw" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="INDEPENDENT_SCRIPT_WORKING_DIRECTORY" value="true" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INDEPENDENT_INTERPRETER_PATH" value="true" />
+      <option name="INTERPRETER_PATH" value="/bin/sh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="EXECUTE_IN_TERMINAL" value="true" />
+      <option name="EXECUTE_SCRIPT_FILE" value="true" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests | #1" />
+      <item itemvalue="Shell Script.mvnw" />
+      <item itemvalue="Spring Boot.ProjectOonaApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Shell Script.mvnw" />
+        <item itemvalue="HTTP Request.generated-requests | #1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.23774.435" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-IU-251.23774.435" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="StructureViewState">
+    <option name="selectedTab" value="Logical" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="38949c78-843c-418b-8129-c19b6b1526d3" name="Changes" comment="" />
+      <created>1748968104441</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748968104441</updated>
+      <workItem from="1748968108040" duration="1032000" />
+      <workItem from="1748969980819" duration="36000" />
+      <workItem from="1748970099793" duration="33000" />
+      <workItem from="1748970265463" duration="29000" />
+      <workItem from="1748995679714" duration="471000" />
+      <workItem from="1749767218252" duration="42000" />
+      <workItem from="1750196592484" duration="39000" />
+      <workItem from="1750548919158" duration="2727000" />
+      <workItem from="1750888221919" duration="1927000" />
+      <workItem from="1751756756113" duration="347000" />
+      <workItem from="1751758523964" duration="1542000" />
+      <workItem from="1752707335815" duration="4000" />
+      <workItem from="1753219082467" duration="287000" />
+      <workItem from="1753219384711" duration="4844000" />
+      <workItem from="1753310914548" duration="4569000" />
+      <workItem from="1753315800393" duration="150000" />
+      <workItem from="1753396037968" duration="10162000" />
+      <workItem from="1753487063616" duration="478000" />
+      <workItem from="1753488308756" duration="531000" />
+      <workItem from="1753565290873" duration="5584000" />
+      <workItem from="1753653167442" duration="1003000" />
+      <workItem from="1753654921799" duration="61000" />
+      <workItem from="1753748193564" duration="19000" />
+      <workItem from="1753824487455" duration="4694000" />
+      <workItem from="1753915879144" duration="2359000" />
+      <workItem from="1754088189689" duration="3141000" />
+      <workItem from="1754157659396" duration="232000" />
+      <workItem from="1754177565517" duration="1466000" />
+      <workItem from="1754179066652" duration="2503000" />
+      <workItem from="1754343548887" duration="10736000" />
+      <workItem from="1754429762875" duration="2788000" />
+      <workItem from="1754526173292" duration="432000" />
+      <workItem from="1754771954703" duration="23000" />
+      <workItem from="1754784310791" duration="1737000" />
+      <workItem from="1754863529552" duration="608000" />
+      <workItem from="1754951861636" duration="2966000" />
+      <workItem from="1755041209173" duration="892000" />
+      <workItem from="1755120273845" duration="2078000" />
+      <workItem from="1755381279969" duration="3264000" />
+      <workItem from="1755556283369" duration="6684000" />
+      <workItem from="1755563662640" duration="151000" />
+      <workItem from="1755563825468" duration="267000" />
+      <workItem from="1755724912573" duration="2739000" />
+      <workItem from="1755819223816" duration="5961000" />
+      <workItem from="1756161879536" duration="5199000" />
+      <workItem from="1756247347834" duration="4230000" />
+      <workItem from="1756340544004" duration="1741000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Productos/PostProductos.java</url>
+          <line>24</line>
+          <properties class="LogicaAplicacion.CasosDeUso.Productos.PostProductos" method="updateProducto">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="restClient" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

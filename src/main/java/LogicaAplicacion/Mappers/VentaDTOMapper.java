@@ -11,16 +11,17 @@ import java.util.List;
 public class VentaDTOMapper {
     public static Venta FromDTO(VentaDTO dto){
         List<Item> itemsFromDTO = new ArrayList<>();
-        for(ItemDTO i : dto.Items){
+        for(ItemDTO i : dto.getItems()){
             itemsFromDTO.add(ItemDTOMapper.FromDTO(i));
         }
-        return new Venta(dto.Id, dto.Fecha, itemsFromDTO, dto.PrecioTotal);
+        java.sql.Date sqlDate = new java.sql.Date(dto.getFecha().getTime());
+        return Venta.builder().id(dto.getId()).fechaVenta(sqlDate).items(itemsFromDTO).build();
     }
     public static VentaDTO toDTO(Venta venta) {
         List<ItemDTO> itemsToDTO = new ArrayList<>();
         for(Item i : venta.getItems()){
             itemsToDTO.add(ItemDTOMapper.ToDTO(i));
         }
-        return new VentaDTO(venta.getIdVenta(), venta.getFechaVenta(), itemsToDTO, venta.getPrecioTotal());
+        return new VentaDTO(venta.getFechaVenta(), itemsToDTO, venta.getPrecioTotal());
     }
 }

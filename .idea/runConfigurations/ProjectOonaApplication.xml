@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ProjectOonaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+    <envs>
+      <env name="apiKey" value="null" />
+    </envs>
+    <module name="Project_Oona" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="Oona.Project_Oona.ProjectOonaApplication" />
+    <extension name="coverage">
+      <pattern>
+        <option name="PATTERN" value="Oona.Project_Oona.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

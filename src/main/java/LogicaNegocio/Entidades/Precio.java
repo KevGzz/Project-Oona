@@ -1,18 +1,21 @@
 package LogicaNegocio.Entidades;
 
+import jakarta.persistence.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.experimental.SuperBuilder;
 
 import java.util.Date;
+@Entity
+@SuperBuilder
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Precio {
-    private Date fechaDesde;
-    private Date fechaHasta;
+public class Precio extends EntidadBase{
+    private Date fecha;
     private double valor;
-    private Moneda moneda;
+    private String moneda;
 }

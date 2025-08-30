@@ -1,27 +1,23 @@
 package LogicaAplicacion.DTOs;
 
 import LogicaNegocio.Entidades.Caracteristica;
+import lombok.*;
 import org.antlr.v4.runtime.misc.EqualityComparator;
 
 import java.util.List;
-
+@AllArgsConstructor
+@RequiredArgsConstructor
+@Builder
+@Getter
+@Setter
+@Data
 public class ProductoDTO {
-    public int Id;
-    public ProveedorDTO Proveedor;
-    public List<EtiquetaDTO> Etiquetas;
-    public List<CaracteristicaDTO> Caracteristicas;
-    public List<PrecioDTO> Precios;
-    public String Nombre;
-    public String Descripcion;
-    public ProductoDTO(int id, ProveedorDTO proveedor, List<EtiquetaDTO> etiquetas,
-                       List<CaracteristicaDTO> caracteristicas, List<PrecioDTO> precios,
-                       String nombre, String descripcion) {
-        Id = id;
-        Proveedor = proveedor;
-        Etiquetas = etiquetas;
-        Caracteristicas = caracteristicas;
-        Precios = precios;
-        Nombre = nombre;
-        Descripcion = descripcion;
-    }
+    private String id;
+    private final String idMeli;
+    private final ProveedorDTO Proveedor;
+    private final String urlFoto;
+    private final List<CaracteristicaDTO> Caracteristicas;
+    private final List<PrecioDTO> Precios;
+    private final String Nombre;
+    private final String Descripcion;
 }

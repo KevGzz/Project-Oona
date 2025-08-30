@@ -1,0 +1,36 @@
+package controllers;
+
+import LogicaNegocio.Entidades.Item;
+import Repository.IRepoItem;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/items")
+public class ItemController {
+    @Autowired
+    private IRepoItem gatoRepo;
+
+    @PostMapping
+    public Item crear(@RequestBody Item gatinho) {
+        return gatoRepo.save(gatinho);
+    }
+
+    @GetMapping
+    public List<Item> listar() {
+        return gatoRepo.findAll();
+    }
+
+    @PutMapping
+    public Item editar(@RequestBody Item gatinho) {
+        return gatoRepo.save(gatinho);
+    }
+
+    @DeleteMapping
+    public void eliminar(@RequestBody Item gatinho) {
+        gatoRepo.delete(gatinho);
+    }
+
+}

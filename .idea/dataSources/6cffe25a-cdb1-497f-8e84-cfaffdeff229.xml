@@ -1073,7 +1073,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Current>1</Current>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2025-08-16.22:31:09</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2025-08-25.23:17:20</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="289" parent="1" name="information_schema">
@@ -1490,165 +1490,160 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <Position>1</Position>
       <StoredType>int|0s</StoredType>
     </column>
-    <column id="382" parent="306" name="id_stock">
-      <NotNull>1</NotNull>
+    <column id="382" parent="306" name="created_at">
       <Position>2</Position>
-      <StoredType>int|0s</StoredType>
+      <StoredType>datetime(6)|0s</StoredType>
     </column>
-    <column id="383" parent="306" name="created_at">
+    <column id="383" parent="306" name="deleted_at">
       <Position>3</Position>
       <StoredType>datetime(6)|0s</StoredType>
     </column>
-    <column id="384" parent="306" name="deleted_at">
+    <column id="384" parent="306" name="updated_at">
       <Position>4</Position>
       <StoredType>datetime(6)|0s</StoredType>
     </column>
-    <column id="385" parent="306" name="updated_at">
-      <Position>5</Position>
-      <StoredType>datetime(6)|0s</StoredType>
-    </column>
-    <column id="386" parent="306" name="id">
+    <column id="385" parent="306" name="id">
       <NotNull>1</NotNull>
+      <Position>5</Position>
+      <StoredType>varchar(255)|0s</StoredType>
+    </column>
+    <column id="386" parent="306" name="producto_id">
       <Position>6</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="387" parent="306" name="producto_id">
+    <column id="387" parent="306" name="proveedor_id">
       <Position>7</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="388" parent="306" name="proveedor_id">
-      <Position>8</Position>
-      <StoredType>varchar(255)|0s</StoredType>
-    </column>
-    <foreign-key id="389" parent="306" name="FK1hx9o107cpb0o8hppaicd7af9">
+    <foreign-key id="388" parent="306" name="FK1hx9o107cpb0o8hppaicd7af9">
       <ColNames>producto_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>producto</RefTableName>
     </foreign-key>
-    <foreign-key id="390" parent="306" name="FK4e51v9cltpno3ieopehv0ueft">
+    <foreign-key id="389" parent="306" name="FK4e51v9cltpno3ieopehv0ueft">
       <ColNames>proveedor_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>proveedor</RefTableName>
     </foreign-key>
-    <index id="391" parent="306" name="PRIMARY">
+    <index id="390" parent="306" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="392" parent="306" name="FK1hx9o107cpb0o8hppaicd7af9">
+    <index id="391" parent="306" name="FK1hx9o107cpb0o8hppaicd7af9">
       <ColNames>producto_id</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="393" parent="306" name="FK4e51v9cltpno3ieopehv0ueft">
+    <index id="392" parent="306" name="FK4e51v9cltpno3ieopehv0ueft">
       <ColNames>proveedor_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="394" parent="306" name="PRIMARY">
+    <key id="393" parent="306" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="395" parent="307" name="created_at">
+    <column id="394" parent="307" name="created_at">
       <Position>1</Position>
       <StoredType>datetime(6)|0s</StoredType>
     </column>
-    <column id="396" parent="307" name="deleted_at">
+    <column id="395" parent="307" name="deleted_at">
       <Position>2</Position>
       <StoredType>datetime(6)|0s</StoredType>
     </column>
-    <column id="397" parent="307" name="updated_at">
+    <column id="396" parent="307" name="updated_at">
       <Position>3</Position>
       <StoredType>datetime(6)|0s</StoredType>
     </column>
-    <column id="398" parent="307" name="contrasena">
+    <column id="397" parent="307" name="contrasena">
       <Position>4</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="399" parent="307" name="id">
+    <column id="398" parent="307" name="id">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="400" parent="307" name="nombre">
+    <column id="399" parent="307" name="nombre">
       <Position>6</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <index id="401" parent="307" name="PRIMARY">
+    <index id="400" parent="307" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="402" parent="307" name="PRIMARY">
+    <key id="401" parent="307" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="403" parent="308" name="fecha_venta">
+    <column id="402" parent="308" name="fecha_venta">
       <Position>1</Position>
       <StoredType>date|0s</StoredType>
     </column>
-    <column id="404" parent="308" name="precio_total">
+    <column id="403" parent="308" name="precio_total">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>double|0s</StoredType>
     </column>
-    <column id="405" parent="308" name="created_at">
+    <column id="404" parent="308" name="created_at">
       <Position>3</Position>
       <StoredType>datetime(6)|0s</StoredType>
     </column>
-    <column id="406" parent="308" name="deleted_at">
+    <column id="405" parent="308" name="deleted_at">
       <Position>4</Position>
       <StoredType>datetime(6)|0s</StoredType>
     </column>
-    <column id="407" parent="308" name="updated_at">
+    <column id="406" parent="308" name="updated_at">
       <Position>5</Position>
       <StoredType>datetime(6)|0s</StoredType>
     </column>
-    <column id="408" parent="308" name="id">
+    <column id="407" parent="308" name="id">
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <index id="409" parent="308" name="PRIMARY">
+    <index id="408" parent="308" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="410" parent="308" name="PRIMARY">
+    <key id="409" parent="308" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="411" parent="309" name="items_id">
+    <column id="410" parent="309" name="items_id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="412" parent="309" name="venta_id">
+    <column id="411" parent="309" name="venta_id">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <foreign-key id="413" parent="309" name="FKm6x3y5o1jkjfcmbom2nh7ej6d">
+    <foreign-key id="412" parent="309" name="FKm6x3y5o1jkjfcmbom2nh7ej6d">
       <ColNames>items_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>item</RefTableName>
     </foreign-key>
-    <foreign-key id="414" parent="309" name="FKeixhqw9vblw44kf9tehuuakp6">
+    <foreign-key id="413" parent="309" name="FKeixhqw9vblw44kf9tehuuakp6">
       <ColNames>venta_id</ColNames>
       <RefColNames>id</RefColNames>
       <RefTableName>venta</RefTableName>
     </foreign-key>
-    <index id="415" parent="309" name="UKbnxc0coj6ndfj0s8r7pxu2muw">
+    <index id="414" parent="309" name="UKbnxc0coj6ndfj0s8r7pxu2muw">
       <ColNames>items_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="416" parent="309" name="FKeixhqw9vblw44kf9tehuuakp6">
+    <index id="415" parent="309" name="FKeixhqw9vblw44kf9tehuuakp6">
       <ColNames>venta_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="417" parent="309" name="UKbnxc0coj6ndfj0s8r7pxu2muw">
+    <key id="416" parent="309" name="UKbnxc0coj6ndfj0s8r7pxu2muw">
       <UnderlyingIndexName>UKbnxc0coj6ndfj0s8r7pxu2muw</UnderlyingIndexName>
     </key>
   </database-model>

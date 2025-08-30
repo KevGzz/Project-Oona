@@ -28,7 +28,7 @@ public class CorsConfig {
                 if (origin != null && allowedOrigins.contains(origin)) {
                     response.setHeader("Access-Control-Allow-Origin", origin);
                     response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
-                    response.setHeader("Access-Control-Allow-Headers", "Origin, Content-Type, Accept, Authorization, Codigo");
+                    response.setHeader("Access-Control-Allow-Headers", "Origin, Content-Type, Accept, Authorization, Codigo, X-userToken");
                     response.setHeader("Access-Control-Allow-Credentials", "true");
                 }
 

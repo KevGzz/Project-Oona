@@ -40,7 +40,7 @@ public class ClienteMercadoLibre {
     @Autowired
     private PostVentas postVentas;
 
-    public void getAccessToken(String codigo){
+    public String getAccessToken(String codigo){
         RestClient restClient = RestClient.create();
         Map<String, Object> body = Map.of(
             "grant_type", "authorization_code",
@@ -65,6 +65,7 @@ public class ClienteMercadoLibre {
         apiEnvConfig.setUser_id(config.getUser_id());
         apiEnvConfig.setRefresh_token(config.getRefresh_token());
 //      System.out.println(apiEnvConfig.getRefresh_token());
+        return apiEnvConfig.getAccess_token().toString();
     }
 
     public String getInfoUser(){

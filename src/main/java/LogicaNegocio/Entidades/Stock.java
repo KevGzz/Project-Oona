@@ -16,7 +16,6 @@ import lombok.experimental.SuperBuilder;
 @Entity
 @SuperBuilder
 public class Stock extends EntidadBase{
-    private int idStock;
     @ManyToOne
     @JoinColumn(name = "proveedor_id")
     private Proveedor proveedor;

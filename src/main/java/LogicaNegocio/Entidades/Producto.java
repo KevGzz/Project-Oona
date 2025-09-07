@@ -17,7 +17,7 @@ import java.util.List;
 public class Producto extends EntidadBase{
     private String idMeli;
     @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_proveedor", nullable = true)
+    @JoinColumn(name = "id_proveedor", nullable = true, referencedColumnName = "id")
     private Proveedor proveedor;
     private String urlFoto;
     @OneToMany(cascade = CascadeType.ALL)

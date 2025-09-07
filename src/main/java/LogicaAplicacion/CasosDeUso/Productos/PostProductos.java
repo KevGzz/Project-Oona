@@ -1,8 +1,10 @@
 package LogicaAplicacion.CasosDeUso.Productos;
 
 import LogicaAplicacion.DTOs.ProductoDTO;
+import LogicaAplicacion.DTOs.ProveedorDTO;
 import LogicaAplicacion.InterfacesCU.Productos.IPostProductos;
 import LogicaAplicacion.Mappers.ProductoDTOMapper;
+import LogicaAplicacion.Mappers.ProveedorDTOMapper;
 import LogicaNegocio.Entidades.Producto;
 import Repository.IProductoRepo;
 import lombok.RequiredArgsConstructor;
@@ -17,8 +19,9 @@ public class PostProductos implements IPostProductos {
     private final IProductoRepo _productoRepo;
 
     @Override
-    public void addProducto(ProductoDTO producto) {
-        this._productoRepo.save(ProductoDTOMapper.FromDTO(producto));
+    public void addProducto(ProductoDTO dto) {
+        Producto producto = ProductoDTOMapper.FromDTO(dto);
+        this._productoRepo.save(producto);
     }
 
     @Override
@@ -26,5 +29,10 @@ public class PostProductos implements IPostProductos {
         String id = this._productoRepo.findIdByIdMeli(producto.getIdMeli()).getId();
         producto.setId(id);
         this._productoRepo.save(ProductoDTOMapper.FromDTO(producto));
+    }
+
+    @Override
+    public void deleteProducto(ProductoDTO producto) {
+        this._productoRepo.delete(ProductoDTOMapper.FromDTO(producto));
     }
 }

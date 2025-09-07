@@ -9,12 +9,11 @@ import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDateTime;
 
-@Entity
+@MappedSuperclass
 @Getter @Setter
 @NoArgsConstructor
 @AllArgsConstructor
 @SuperBuilder
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public abstract class EntidadBase {
         @Id
         @GeneratedValue(strategy = GenerationType.UUID)

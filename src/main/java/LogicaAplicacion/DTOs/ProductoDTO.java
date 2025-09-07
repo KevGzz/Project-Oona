@@ -15,7 +15,7 @@ import java.util.List;
 public class ProductoDTO {
     private String id;
     private final String idMeli;
-    private final ProveedorDTO Proveedor;
+    private ProveedorDTO Proveedor;
     private final String urlFoto;
     private final List<CaracteristicaDTO> Caracteristicas;
     private final List<PrecioDTO> Precios;

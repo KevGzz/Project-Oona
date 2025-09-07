@@ -44,7 +44,7 @@ public class ProductoDTOMapper {
         if(producto.getProveedor() != null){
             proveedor = ProveedorDTOMapper.ToDTO(producto.getProveedor());
         }
-        return new ProductoDTO(producto.getIdMeli(), proveedor,
+        return new ProductoDTO(producto.getId(), producto.getIdMeli(), proveedor,
                 producto.getUrlFoto(), caracteristicasToDTO, preciosToDTO,
                 producto.getNombre(), producto.getDescripcion());
     }

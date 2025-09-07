@@ -172,6 +172,7 @@ public class ClienteMercadoLibre {
         String description = (String) descriptionClient.get("plain_text");
 
         ProductoDTO producto = new ProductoDTO(
+                null,
                 idMeli,
                 null,
                 (String) item.get("thumbnail"),

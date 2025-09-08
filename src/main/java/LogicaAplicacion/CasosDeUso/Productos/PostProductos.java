@@ -5,10 +5,13 @@ import LogicaAplicacion.DTOs.ProveedorDTO;
 import LogicaAplicacion.InterfacesCU.Productos.IPostProductos;
 import LogicaAplicacion.Mappers.ProductoDTOMapper;
 import LogicaAplicacion.Mappers.ProveedorDTOMapper;
+import LogicaNegocio.Entidades.Caracteristica;
 import LogicaNegocio.Entidades.Producto;
 import LogicaNegocio.Entidades.Proveedor;
+import Repository.ICaracteristicaRepo;
 import Repository.IProductoRepo;
 import Repository.IProveedorRepo;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +23,7 @@ public class PostProductos implements IPostProductos {
 
     private final IProductoRepo _productoRepo;
     private final IProveedorRepo _proveedorRepo;
+    private final ICaracteristicaRepo _caracteristicaRepo;
 
     @Override
     public void addProducto(ProductoDTO dto) {
@@ -38,8 +42,15 @@ public class PostProductos implements IPostProductos {
         this._productoRepo.save(ProductoDTOMapper.FromDTO(producto));
     }
 
+    @Transactional
     @Override
     public void deleteProducto(ProductoDTO producto) {
-        this._productoRepo.delete(ProductoDTOMapper.FromDTO(producto));
+        Producto productoD = this._productoRepo.findProductoById(producto.getId());
+        if(productoD != null) {
+            for(Caracteristica c: productoD.getCaracteristicas()) {
+                this._caracteristicaRepo.removeById(c.getId());
+            }
+            this._productoRepo.removeProductoById(productoD.getId());
+        }
     }
 }

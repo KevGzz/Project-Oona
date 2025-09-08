@@ -23,5 +23,9 @@ public interface IProductoRepo extends JpaRepository<Producto, String> {
     Producto findIdByIdMeli(String idMeli);
 
     Producto findProductoById(String id);
+
+    void deleteProductosById(String id);
+
+    void removeProductoById(String id);
 }
 

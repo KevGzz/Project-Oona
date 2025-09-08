@@ -12,13 +12,14 @@
     <list default="true" id="38949c78-843c-418b-8129-c19b6b1526d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Productos/PostProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Productos/PostProductos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/ProductoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/ProductoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ProductoDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ProductoDTOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Stock/PostStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Stock/PostStock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/ICaracteristicaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/ICaracteristicaRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/IProductoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IProductoRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/CasosDeUso/Productos/PostProductos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/CasosDeUso/Productos/PostProductos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ProductoDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ProductoDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/ProductoDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/ProductoDTOMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/CasosDeUso/Stock/PostStock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/CasosDeUso/Stock/PostStock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/ICaracteristicaRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Repository/ICaracteristicaRepo.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +67,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SHELLCHECK.PATH": "I do mind",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.ProjectOonaApplication.executor": "Debug",
-    "git-widget-placeholder": "feature-Correcciones",
+    "Spring Boot.ProjectOonaApplication.executor": "Run",
+    "git-widget-placeholder": "feature-Correccionesv2",
     "last_opened_file_path": "/home/kevgzz/Proyecto/Project-Oona",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -220,6 +221,7 @@
       <workItem from="1757268186359" duration="128000" />
       <workItem from="1757278798373" duration="6013000" />
       <workItem from="1757285493374" duration="1449000" />
+      <workItem from="1757289209089" duration="3122000" />
     </task>
     <servers />
   </component>
@@ -251,7 +253,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Productos/PostProductos.java</url>
-          <line>24</line>
+          <line>28</line>
           <properties class="LogicaAplicacion.CasosDeUso.Productos.PostProductos" method="addProducto">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />

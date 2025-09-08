@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ICaracteristicaRepo extends JpaRepository<Caracteristica, String> {
+
+    long removeById(String id);
 }

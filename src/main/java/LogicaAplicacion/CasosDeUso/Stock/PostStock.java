@@ -10,6 +10,7 @@ import LogicaNegocio.Entidades.Stock;
 import Repository.IProductoRepo;
 import Repository.IProveedorRepo;
 import Repository.IStockRepo;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -12,14 +12,9 @@
     <list default="true" id="38949c78-843c-418b-8129-c19b6b1526d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Productos/PostProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Productos/PostProductos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Stock/PostStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Stock/PostStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/ICaracteristicaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/ICaracteristicaRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/IProductoRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IProductoRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/CasosDeUso/Productos/PostProductos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/CasosDeUso/Productos/PostProductos.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/CasosDeUso/Stock/PostStock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/CasosDeUso/Stock/PostStock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Producto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repository/ICaracteristicaRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Repository/ICaracteristicaRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/CaracteristicaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/CaracteristicaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/InterfacesCU/Productos/IPostProductos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/InterfacesCU/Productos/IPostProductos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +62,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SHELLCHECK.PATH": "I do mind",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "Spring Boot.ProjectOonaApplication.executor": "Run",
-    "git-widget-placeholder": "feature-Correccionesv2",
+    "Spring Boot.ProjectOonaApplication.executor": "Debug",
+    "git-widget-placeholder": "feature-deleteProd",
     "last_opened_file_path": "/home/kevgzz/Proyecto/Project-Oona",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -78,7 +73,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "settings.editor.splitter.proportion": "0.22138126",
     "vue.rearranger.settings.migration": "true"
   },
@@ -222,6 +217,9 @@
       <workItem from="1757278798373" duration="6013000" />
       <workItem from="1757285493374" duration="1449000" />
       <workItem from="1757289209089" duration="3122000" />
+      <workItem from="1757310358013" duration="249000" />
+      <workItem from="1757310986870" duration="1542000" />
+      <workItem from="1757363679900" duration="6172000" />
     </task>
     <servers />
   </component>
@@ -253,12 +251,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Productos/PostProductos.java</url>
-          <line>28</line>
+          <line>24</line>
           <properties class="LogicaAplicacion.CasosDeUso.Productos.PostProductos" method="addProducto">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Productos/PostProductos.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

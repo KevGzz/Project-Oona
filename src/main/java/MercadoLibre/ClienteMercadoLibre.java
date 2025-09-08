@@ -102,7 +102,7 @@ public class ClienteMercadoLibre {
     private void agregarProductos(List<ProductoDTO> retorno) {
         for (ProductoDTO producto : retorno) {
             if(getProductos.existeProducto(producto.getIdMeli())){
-                postProductos.updateProducto(producto);
+                postProductos.updateProductoFromMELI(producto);
             }
             else postProductos.addProducto(producto);
         }

@@ -16,15 +16,14 @@ import java.util.List;
 @NoArgsConstructor
 public class Producto extends EntidadBase{
     private String idMeli;
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_proveedor", nullable = true)
+    @ManyToOne
+    @JoinColumn(name = "id_proveedor", nullable = true, referencedColumnName = "id")
     private Proveedor proveedor;
     private String urlFoto;
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Caracteristica> caracteristicas;
-    @OneToMany(cascade= CascadeType.ALL) //Revisar cascade=
+    @OneToMany(cascade= CascadeType.ALL, orphanRemoval = true) //Revisar cascade=
     private List<Precio> precios;
     private String nombre;
     private String descripcion;
-
 }

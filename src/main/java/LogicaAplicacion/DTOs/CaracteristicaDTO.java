@@ -8,7 +8,6 @@ import lombok.RequiredArgsConstructor;
 @Builder
 @Data
 public class CaracteristicaDTO {
-    private final String Nombre;
-    private final String Descripcion;
-
+    private final String nombre;
+    private final String descripcion;
 }

@@ -21,5 +21,11 @@ public interface IProductoRepo extends JpaRepository<Producto, String> {
 
     @Query("select p from Producto p where p.idMeli = ?1")
     Producto findIdByIdMeli(String idMeli);
+
+    Producto findProductoById(String id);
+
+    void deleteProductosById(String id);
+
+    void removeProductoById(String id);
 }
 

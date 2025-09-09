@@ -102,7 +102,7 @@ public class ClienteMercadoLibre {
     private void agregarProductos(List<ProductoDTO> retorno) {
         for (ProductoDTO producto : retorno) {
             if(getProductos.existeProducto(producto.getIdMeli())){
-                postProductos.updateProducto(producto);
+                postProductos.updateProductoFromMELI(producto);
             }
             else postProductos.addProducto(producto);
         }
@@ -172,6 +172,7 @@ public class ClienteMercadoLibre {
         String description = (String) descriptionClient.get("plain_text");
 
         ProductoDTO producto = new ProductoDTO(
+                null,
                 idMeli,
                 null,
                 (String) item.get("thumbnail"),
@@ -186,7 +187,7 @@ public class ClienteMercadoLibre {
     private void agregarVentas(List<VentaDTO> retorno) {
         for (VentaDTO v : retorno) {
             if(getVentas.existeVenta(v.getFecha())){
-                postVentas.updateVenta(v);
+                postVentas.updateVentaFromMELI(v);
             }
             else postVentas.addVenta(v);
         }

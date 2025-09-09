@@ -6,10 +6,11 @@ import LogicaNegocio.Entidades.Stock;
 
 public class StockDTOMapper {
     public static Stock FromDTO(StockDTO dto) {
-        return new Stock(ProveedorDTOMapper.FromDTO(dto.getProveedor()), ProductoDTOMapper.FromDTO(dto.getProducto()), dto.getCantidad());
+        return Stock.builder().id(dto.getId()).proveedor(ProveedorDTOMapper.FromDTO(dto.getProveedor()))
+                .producto(ProductoDTOMapper.FromDTO(dto.getProducto())).cantidad(dto.getCantidad()).build();
     }
     public static StockDTO toDTO(Stock stock) {
-        return StockDTO.builder().Id(stock.getId()).Proveedor(ProveedorDTOMapper.ToDTO(stock.getProveedor()))
-                .Producto(ProductoDTOMapper.ToDTO(stock.getProducto())).Cantidad(stock.getCantidad()).build();
+        return StockDTO.builder().Id(stock.getId()).proveedor(ProveedorDTOMapper.ToDTO(stock.getProveedor()))
+                .producto(ProductoDTOMapper.ToDTO(stock.getProducto())).cantidad(stock.getCantidad()).build();
     }
 }

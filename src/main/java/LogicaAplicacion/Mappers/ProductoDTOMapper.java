@@ -26,8 +26,6 @@ public class ProductoDTOMapper {
         if(dto.getProveedor() != null){
             proveedor = ProveedorDTOMapper.FromDTO(dto.getProveedor());
         }
-//        return new Producto(dto.getIdMeli(), proveedor, dto.getUrlFoto(), caracteristicasFromDTO, preciosFromDTO,
-//                dto.getNombre(), dto.getDescripcion());
         return Producto.builder().id(dto.getId()).idMeli(dto.getIdMeli()).proveedor(proveedor)
                 .urlFoto(dto.getUrlFoto()).caracteristicas(caracteristicasFromDTO)
                 .precios(preciosFromDTO).nombre(dto.getNombre()).descripcion(dto.getDescripcion())
@@ -46,7 +44,7 @@ public class ProductoDTOMapper {
         if(producto.getProveedor() != null){
             proveedor = ProveedorDTOMapper.ToDTO(producto.getProveedor());
         }
-        return new ProductoDTO(producto.getIdMeli(), proveedor,
+        return new ProductoDTO(producto.getId(), producto.getIdMeli(), proveedor,
                 producto.getUrlFoto(), caracteristicasToDTO, preciosToDTO,
                 producto.getNombre(), producto.getDescripcion());
     }

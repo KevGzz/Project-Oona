@@ -20,9 +20,22 @@ public class PostVentas implements IPostVentas {
 
     @Override
     public void updateVenta(VentaDTO venta) {
+        String id = this.ventaRepo.findById(venta.getId()).get().getId();
+        venta.setId(id);
+        this.ventaRepo.save(VentaDTOMapper.FromDTO(venta));
+    }
+
+    @Override
+    public void updateVentaFromMELI(VentaDTO venta) {
         java.sql.Date sqlDate = new java.sql.Date(venta.getFecha().getTime());
         String id = this.ventaRepo.findIdByFechaVenta(sqlDate);
         venta.setId(id);
         this.ventaRepo.save(VentaDTOMapper.FromDTO(venta));
     }
+
+    @Override
+    public void delete(VentaDTO venta) {
+        ventaRepo.delete(VentaDTOMapper.FromDTO(venta));
+    }
+
 }

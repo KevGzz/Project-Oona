@@ -10,35 +10,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="38949c78-843c-418b-8129-c19b6b1526d3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Stock/GetStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Stock/PostStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/InterfacesCU/Stock/IGetStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/InterfacesCU/Stock/IPostStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6cffe25a-cdb1-497f-8e84-cfaffdeff229.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6cffe25a-cdb1-497f-8e84-cfaffdeff229.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Ventas/PostVentas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Ventas/PostVentas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/ItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/ItemDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/StockDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/StockDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/VentaDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/DTOs/VentaDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/InterfacesCU/Ventas/IPostVentas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/InterfacesCU/Ventas/IPostVentas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ItemDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/ItemDTOMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/StockDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/StockDTOMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaNegocio/Entidades/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/VentaDTOMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LogicaAplicacion/Mappers/VentaDTOMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/IStockRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IStockRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/CorsConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/MercadoLibreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/MercadoLibreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Repository/IVentaRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Repository/IVentaRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllers/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/VentaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/VentaController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/CasosDeUso/Ventas/PostVentas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/CasosDeUso/Ventas/PostVentas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ItemDTO$ItemDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ItemDTO$ItemDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ItemDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/ItemDTO.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/StockDTO$StockDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/StockDTO$StockDTOBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/StockDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/StockDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/VentaDTO$VentaDTOBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/VentaDTO$VentaDTOBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/VentaDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/DTOs/VentaDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/InterfacesCU/Ventas/IPostVentas.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/InterfacesCU/Ventas/IPostVentas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/ItemDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/ItemDTOMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/StockDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/StockDTOMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Stock$StockBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Stock$StockBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Stock.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaNegocio/Entidades/Stock.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/VentaDTOMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/LogicaAplicacion/Mappers/VentaDTOMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MercadoLibre/ClienteMercadoLibre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Repository/IStockRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Repository/IStockRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/config/CorsConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/config/CorsConfig$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/MercadoLibreController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/MercadoLibreController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Repository/IVentaRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Repository/IVentaRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controllers/StockController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/StockController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controllers/VentaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/VentaController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
     "SHELLCHECK.PATH": "I do mind",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "Spring Boot.ProjectOonaApplication.executor": "Run",
-    "git-widget-placeholder": "feature-login",
+    "git-widget-placeholder": "feature-deleteProd",
     "last_opened_file_path": "/home/kevgzz/Proyecto/Project-Oona",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -97,7 +96,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
     "settings.editor.splitter.proportion": "0.22138126",
     "vue.rearranger.settings.migration": "true"
   },
@@ -232,6 +231,20 @@
       <workItem from="1756161879536" duration="5199000" />
       <workItem from="1756247347834" duration="4230000" />
       <workItem from="1756340544004" duration="1741000" />
+      <workItem from="1756863702833" duration="130000" />
+      <workItem from="1756937212243" duration="2948000" />
+      <workItem from="1757033829223" duration="54000" />
+      <workItem from="1757199907119" duration="5088000" />
+      <workItem from="1757262031231" duration="1286000" />
+      <workItem from="1757268186359" duration="128000" />
+      <workItem from="1757278798373" duration="6013000" />
+      <workItem from="1757285493374" duration="1449000" />
+      <workItem from="1757289209089" duration="3122000" />
+      <workItem from="1757310358013" duration="249000" />
+      <workItem from="1757310986870" duration="1542000" />
+      <workItem from="1757363679900" duration="6172000" />
+      <workItem from="1757385477709" duration="9997000" />
+      <workItem from="1757447225299" duration="836000" />
     </task>
     <servers />
   </component>
@@ -253,18 +266,36 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Productos/PostProductos.java</url>
-          <line>24</line>
-          <properties class="LogicaAplicacion.CasosDeUso.Productos.PostProductos" method="updateProducto">
+          <url>file://$PROJECT_DIR$/src/main/java/controllers/ProveedorController.java</url>
+          <line>35</line>
+          <properties class="controllers.ProveedorController" method="editar">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Productos/PostProductos.java</url>
+          <line>24</line>
+          <properties class="LogicaAplicacion.CasosDeUso.Productos.PostProductos" method="addProducto">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Ventas/PostVentas.java</url>
+          <line>36</line>
+          <properties class="LogicaAplicacion.CasosDeUso.Ventas.PostVentas" method="delete">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/MercadoLibre/ClienteMercadoLibre.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/src/main/java/LogicaAplicacion/CasosDeUso/Productos/PostProductos.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

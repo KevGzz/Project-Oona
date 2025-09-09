@@ -5,9 +5,9 @@ import LogicaNegocio.Entidades.Item;
 
 public class ItemDTOMapper {
     public static Item FromDTO(ItemDTO dto){
-        return new Item(ProductoDTOMapper.FromDTO(dto.getProducto()), dto.getCantidad());
+        return Item.builder().id(dto.getId()).producto(ProductoDTOMapper.FromDTO(dto.getProducto())).cantidad(dto.getCantidad()).build();
     }
     public static ItemDTO ToDTO(Item item){
-        return new ItemDTO(ProductoDTOMapper.ToDTO(item.getProducto()), item.getCantidad());
+        return ItemDTO.builder().id(item.getId()).producto(ProductoDTOMapper.ToDTO(item.getProducto())).cantidad(item.getCantidad()).build();
     }
 }

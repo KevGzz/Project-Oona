@@ -10,7 +10,7 @@ public class StockDTOMapper {
                 .producto(ProductoDTOMapper.FromDTO(dto.getProducto())).cantidad(dto.getCantidad()).build();
     }
     public static StockDTO toDTO(Stock stock) {
-        return StockDTO.builder().Id(stock.getId()).Proveedor(ProveedorDTOMapper.ToDTO(stock.getProveedor()))
-                .Producto(ProductoDTOMapper.ToDTO(stock.getProducto())).Cantidad(stock.getCantidad()).build();
+        return StockDTO.builder().Id(stock.getId()).proveedor(ProveedorDTOMapper.ToDTO(stock.getProveedor()))
+                .producto(ProductoDTOMapper.ToDTO(stock.getProducto())).cantidad(stock.getCantidad()).build();
     }
 }

@@ -6,4 +6,8 @@ import LogicaAplicacion.DTOs.VentaDTO;
 public interface IPostVentas {
     void addVenta(VentaDTO venta);
     void updateVenta(VentaDTO venta);
+
+    void updateVentaFromMELI(VentaDTO venta);
+
+    void delete(VentaDTO venta);
 }

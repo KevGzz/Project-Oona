@@ -15,13 +15,13 @@ public class VentaDTOMapper {
             itemsFromDTO.add(ItemDTOMapper.FromDTO(i));
         }
         java.sql.Date sqlDate = new java.sql.Date(dto.getFecha().getTime());
-        return Venta.builder().id(dto.getId()).fechaVenta(sqlDate).items(itemsFromDTO).build();
+        return Venta.builder().id(dto.getId()).fechaVenta(sqlDate).items(itemsFromDTO).precioTotal(dto.getPrecioTotal()).build();
     }
     public static VentaDTO toDTO(Venta venta) {
         List<ItemDTO> itemsToDTO = new ArrayList<>();
         for(Item i : venta.getItems()){
             itemsToDTO.add(ItemDTOMapper.ToDTO(i));
         }
-        return new VentaDTO(venta.getFechaVenta(), itemsToDTO, venta.getPrecioTotal());
+        return VentaDTO.builder().id(venta.getId()).Fecha(venta.getFechaVenta()).Items(itemsToDTO).PrecioTotal(venta.getPrecioTotal()).build();
     }
 }

@@ -187,7 +187,7 @@ public class ClienteMercadoLibre {
     private void agregarVentas(List<VentaDTO> retorno) {
         for (VentaDTO v : retorno) {
             if(getVentas.existeVenta(v.getFecha())){
-                postVentas.updateVenta(v);
+                postVentas.updateVentaFromMELI(v);
             }
             else postVentas.addVenta(v);
         }

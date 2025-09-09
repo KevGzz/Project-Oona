@@ -24,7 +24,7 @@ public class StockController {
     private final GetStock getStock;
 
     @PostMapping
-    public ResponseEntity crear(@RequestBody StockDTO stock) {
+    public ResponseEntity crear(@RequestBody StockDTO stock, @RequestHeader("X-userToken") String token) {
         postStock.add(stock);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
@@ -35,13 +35,13 @@ public class StockController {
     }
 
     @PutMapping
-    public ResponseEntity editar(@RequestBody StockDTO stock) {
+    public ResponseEntity editar(@RequestBody StockDTO stock, @RequestHeader("X-userToken") String token) {
         postStock.update(stock);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @DeleteMapping
-    public ResponseEntity eliminar(@RequestBody StockDTO stock) {
+    public ResponseEntity eliminar(@RequestBody StockDTO stock, @RequestHeader("X-userToken") String token) {
         postStock.delete(stock);
         return new ResponseEntity<>(HttpStatus.OK);
     }

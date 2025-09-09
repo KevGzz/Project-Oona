@@ -47,7 +47,7 @@ public class ClienteMercadoLibre {
             "client_id", "6568777871031299",
             "client_secret", "19V7x4ApeUKthEgVG7ETjj1uXNaC3aIv",
             "code", codigo,
-            "redirect_uri", "https://ant-needed-apparently.ngrok-free.app/"
+            "redirect_uri", "https://54.91.166.104:3000"
         );
 
         ApiEnvConfig config = restClient.post()
